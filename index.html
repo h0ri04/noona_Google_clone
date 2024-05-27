@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>google | HTML</title>
+    <style>
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/7fd818e661.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_left">
+        <a href="#">Google 정보</a>
+        <a href="#">스토어</a>
+      </div>
+      <div class="nav_right">
+        <div class="nav_right_first">
+          <a href="#" aria-label="지메일">Gmail</a>
+          <a href="#" aria-label="이미지 검색">이미지</a>
+        </div>
+        <div class="nav_right_second">
+          <a href="#">
+            <img
+              src="https://www.svgrepo.com/show/315749/menu-grid-o.svg"
+              alt="구글 앱"
+              class="icon"
+            />
+          </a>
+          <a href="#" aria-expanded="false" ari a-lable="구글 계정: username">
+            <img src="imgs/HORI01.png" alt="사용자 아이콘" class="icon" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <img
+        src="https://import.cdn.thinkific.com/523761/courses/1473531/google-210916-155837.png"
+        alt="구글 로고"
+      />
+      <section>
+        <form action="https://www.google.com/search" method="GET">
+          <fieldset>
+            <legend>검색창</legend>
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" />
+              <div class="search_tools">
+                <span aria-label="입력 도구">
+                  <i class="fa-solid fa-keyboard"></i>
+                </span>
+                <span aria-label="음성 검색">
+                  <i class="fa-solid fa-microphone"></i>
+                </span>
+                <span aria-label="이미지로 검색">
+                  <i class="fa-solid fa-camera-retro"></i>
+                </span>
+              </div>
+            </div>
+            <div>
+              <button type="submit">Google 검색</button>
+              <button>I'm Feeling Lucky</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_top">대한민국</div>
+      <div class="footer_bottom">
+        <div>
+          <a href="#">광고</a>
+          <a href="#">비즈니스</a>
+          <a href="#">검색의 원리</a>
+        </div>
+        <div>
+          <a href="https://policies.google.com/privacy?hl=ko&fg=1"
+            >개인정보처리방침</a
+          >
+          <a href="https://policies.google.com/terms?hl=ko&fg=1">약관</a>
+          <button type="button">설정</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
