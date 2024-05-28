@@ -280,3 +280,7 @@ footer {
   text-decoration-line: underline;
   cursor: pointer;
 }
+
+strong {
+  font-size: 20px;
+}
