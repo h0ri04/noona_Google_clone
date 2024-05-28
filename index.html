@@ -3,13 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>google | HTML</title>
-    <style>
-      .icon {
-        width: 50px;
-        height: 50px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>google | Clone</title>
     <script
       src="https://kit.fontawesome.com/7fd818e661.js"
       crossorigin="anonymous"
@@ -28,53 +23,74 @@
           <a href="#" aria-label="이미지 검색">이미지</a>
         </div>
         <div class="nav_right_second">
-          <a href="#">
+          <a href="#" title="Google 앱">
             <img
               src="https://www.svgrepo.com/show/315749/menu-grid-o.svg"
               alt="구글 앱"
-              class="icon"
+              class="app_icon"
             />
           </a>
-          <a href="#" aria-expanded="false" ari a-lable="구글 계정: username">
-            <img src="imgs/HORI01.png" alt="사용자 아이콘" class="icon" />
+          <a
+            href="#"
+            aria-expanded="false"
+            ari
+            a-lable="구글 계정: username"
+            title="Google 계정"
+          >
+            <img src="imgs/HORI01.png" alt="사용자 아이콘" class="user_icon" />
           </a>
         </div>
       </div>
     </nav>
     <main>
-      <img
-        src="https://import.cdn.thinkific.com/523761/courses/1473531/google-210916-155837.png"
-        alt="구글 로고"
-      />
+      <section class="main_logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
+          alt="구글 로고"
+          id="logo"
+        />
+      </section>
       <section>
         <form action="https://www.google.com/search" method="GET">
           <fieldset>
-            <legend>검색창</legend>
-            <div>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="search" />
+            <legend class="sr-only">검색창</legend>
+            <div class="search_wraper">
+              <label for="search" class="search_icon">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+              </label>
+              <input
+                type="search"
+                id="search"
+                name="search"
+                aria-autocomplete="both"
+              />
               <div class="search_tools">
-                <span aria-label="입력 도구">
-                  <i class="fa-solid fa-keyboard"></i>
+                <span aria-label="입력 도구" title="입력 도구">
+                  <i class="fa-solid fa-keyboard icon"></i>
                 </span>
-                <span aria-label="음성 검색">
-                  <i class="fa-solid fa-microphone"></i>
+                <span aria-label="음성 검색" title="음성 검색">
+                  <i class="fa-solid fa-microphone icon"></i>
                 </span>
-                <span aria-label="이미지로 검색">
-                  <i class="fa-solid fa-camera-retro"></i>
+                <span aria-label="이미지로 검색" title="이미지로 검색">
+                  <i class="fa-solid fa-camera-retro icon"></i>
                 </span>
               </div>
             </div>
-            <div>
-              <button type="submit">Google 검색</button>
-              <button>I'm Feeling Lucky</button>
+            <div class="btn_wrapper">
+              <button type="submit" class="search_btn btn">Google 검색</button>
+              <button class="lucky_btn btn">I'm Feeling Lucky</button>
             </div>
           </fieldset>
         </form>
       </section>
+      <article>
+        <div class="empty_box"></div>
+      </article>
     </main>
     <footer>
-      <div class="footer_top">대한민국</div>
+      <div class="footer_top">
+        <p>대한민국</p>
+      </div>
       <div class="footer_bottom">
         <div>
           <a href="#">광고</a>
@@ -86,7 +102,7 @@
             >개인정보처리방침</a
           >
           <a href="https://policies.google.com/terms?hl=ko&fg=1">약관</a>
-          <button type="button">설정</button>
+          <button type="button" class="setting_btn">설정</button>
         </div>
       </div>
     </footer>
