@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>google | Clone</title>
+    <script
+      src="https://kit.fontawesome.com/7fd818e661.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_left">
+        <a href="#">Google 정보</a>
+        <a href="#">스토어</a>
+      </div>
+      <div class="nav_right">
+        <div class="nav_right_first">
+          <a href="#" aria-label="지메일">Gmail</a>
+          <a href="#" aria-label="이미지 검색">이미지</a>
+        </div>
+        <div class="nav_right_second">
+          <a href="#" title="Google 앱">
+            <img
+              src="https://www.svgrepo.com/show/315749/menu-grid-o.svg"
+              alt="구글 앱"
+              class="app_icon"
+            />
+          </a>
+          <a
+            href="#"
+            aria-expanded="false"
+            aria-label="구글 계정: username"
+            title="Google 계정"
+          >
+            <img src="imgs/HORI01.png" alt="사용자 아이콘" class="user_icon" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="main_logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
+          alt="구글 로고"
+          id="logo"
+        />
+      </section>
+      <section>
+        <form action="#" method="GET" onsubmit="return false;">
+          <fieldset>
+            <legend class="sr-only">검색창</legend>
+            <div class="search_wraper">
+              <label for="search" class="search_icon">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+              </label>
+              <input
+                type="search"
+                id="search"
+                name="q"
+                aria-autocomplete="both"
+              />
+              <div class="search_tools">
+                <span aria-label="입력 도구" title="입력 도구">
+                  <i class="fa-solid fa-keyboard icon"></i>
+                </span>
+                <span aria-label="음성 검색" title="음성 검색">
+                  <i class="fa-solid fa-microphone icon"></i>
+                </span>
+                <span aria-label="이미지로 검색" title="이미지로 검색">
+                  <i class="fa-solid fa-camera-retro icon"></i>
+                </span>
+              </div>
+            </div>
+            <div class="btn_wrapper">
+              <button type="submit" class="search_btn btn">Google 검색</button>
+              <button class="lucky_btn btn">I'm Feeling Lucky</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <article>
+        <div class="empty_box"></div>
+      </article>
+    </main>
+    <footer>
+      <div class="footer_top">
+        <p>대한민국</p>
+      </div>
+      <div class="footer_bottom">
+        <div>
+          <a href="#">광고</a>
+          <a href="#">비즈니스</a>
+          <a href="#">검색의 원리</a>
+        </div>
+        <div>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">약관</a>
+          <button type="button" class="setting_btn">설정</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
